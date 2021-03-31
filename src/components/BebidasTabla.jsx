@@ -103,12 +103,6 @@ const BebidasTabla = () => {
                         <th>$45</th>
                     </tr>
                     <tr>
-                        <th>Moka</th>
-                        <th></th>
-                        <th>$35</th>
-                        <th>$40</th>
-                    </tr>
-                    <tr>
                         <th colSpan="4" className="shot_extra">SHOT EXTRA $5</th>
                     </tr>
                 </tbody>
@@ -280,7 +274,7 @@ const BebidasTabla = () => {
                 <tbody>
                     <tr>
                         <th>Natural</th>
-                        <th>$355</th>
+                        <th>$35</th>
                         <th>Matcha</th>
                         <th>$40</th>
                     </tr>
