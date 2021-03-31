@@ -20,6 +20,9 @@ import tofu from '../assets/img/Comidas/TOFU_GANGJEONG.webp';
 // desayunos
 import toast from '../assets/img/desayunos/TOAST.webp';
 import croissant from '../assets/img/desayunos/CROISSANT.webp';
+// ensaladas
+import ensalada from '../assets/img/desayunos/Ensalada.webp';
+import sandwich from '../assets/img/desayunos/sandwich.webp';
 // Postres
 import gelatina from '../assets/img/Postres/GELATINA.webp';
 import brownie from '../assets/img/Postres/BROWNIE.webp';
@@ -53,6 +56,7 @@ const MostrarMenu = () => {
     const [menu, setMenu] = React.useState(false)
     const [comida, setComida] = React.useState(true)
     const [desayunos, setDesayunos] = React.useState(true)
+    const [ensaladas, setEnsaladas] = React.useState(true)
     const [postres, setPostres] = React.useState(true)
     const [bebidas, setBebidas] = React.useState(true)
     const hideMenu = () => {
@@ -239,6 +243,38 @@ const MostrarMenu = () => {
         },
     ]
 
+    const ensaladasMenu = [
+        {
+            id: 29,
+            nombre : 'Atún',
+            precio:50,
+            tipo: 5,
+        },
+        {
+            id: 30,
+            nombre : 'Jamón de pavo',
+            precio:50,
+            tipo: 5,
+        },
+        {
+            id: 31,
+            nombre : 'Jamón serrano',
+            precio:70,
+            tipo: 5,
+        },
+        {
+            id: 32,
+            image:ensalada,
+            tipo: 5,
+        },
+        {
+            id: 33,
+            image:sandwich,
+            tipo: 5,
+        },
+    ]
+
+
     const postresMenu = [
         {
             id: 19,
@@ -346,6 +382,7 @@ const MostrarMenu = () => {
                     setMenu = { setMenu }
                     hideMenu = { hideMenu }
                     inputMenu = { inputMenu }
+                    setEnsaladas = {setEnsaladas}
                 />
             }
             {
@@ -364,6 +401,15 @@ const MostrarMenu = () => {
                         <p>Desayunos Cocoro</p>
                     </div>       
                         { desayunosMenu.map((desayuno)=>{ return <Producto producto = { desayuno } key={desayuno.id}/>})}
+                    </div>
+            }
+            {
+                ensaladas && 
+                    <div>
+                    <div className="tittle">
+                        <p>Ensaladas & Sandwich</p>
+                    </div>       
+                        { ensaladasMenu.map((ensalada)=>{ return <Producto producto = { ensalada } key={ensalada.id}/>})}
                     </div>
             }
             {

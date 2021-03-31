@@ -8,7 +8,8 @@ const Menu = (
         setPostres,
         setBebidas,
         hideMenu,
-        inputMenu
+        inputMenu,
+        setEnsaladas
     }) => {
     const showProduct = (id) => {
         switch (id) {
@@ -17,6 +18,7 @@ const Menu = (
                 setDesayunos(false)
                 setPostres(false)
                 setBebidas(false)
+                setEnsaladas(false)
                 hideMenu()
                 inputMenu.checked = 0
                 break;
@@ -25,6 +27,7 @@ const Menu = (
                 setDesayunos(true)
                 setPostres(false)
                 setBebidas(false)
+                setEnsaladas(false)
                 hideMenu()
                 inputMenu.checked = 0
                 break;
@@ -33,6 +36,7 @@ const Menu = (
                 setDesayunos(false)
                 setPostres(true)
                 setBebidas(false)
+                setEnsaladas(false)
                 hideMenu()
                 inputMenu.checked = 0
                 break;
@@ -41,6 +45,7 @@ const Menu = (
                 setDesayunos(false)
                 setPostres(false)
                 setBebidas(true)
+                setEnsaladas(false)
                 hideMenu()
                 inputMenu.checked = 0
                 break;
@@ -49,9 +54,19 @@ const Menu = (
                 setDesayunos(true)
                 setPostres(true)
                 setBebidas(true)
+                setEnsaladas(true)
                 hideMenu()
                 inputMenu.checked = 0
-                break;        
+                break;
+            case 6:
+                setcomida(false)
+                setDesayunos(false)
+                setPostres(false)
+                setBebidas(false)
+                setEnsaladas(true)
+                hideMenu()
+                inputMenu.checked = 0
+                break;   
             default:
                 break;
         }
@@ -63,6 +78,7 @@ const Menu = (
                 <ul>
                     <li onClick={()=>showProduct(1)}>Comida</li>
                     <li onClick={()=>showProduct(2)}>Desayunos Cocoro</li>
+                    <li onClick={()=>showProduct(6)}>Ensaladas & Sandwich</li>
                     <li onClick={()=>showProduct(3)}>Postres Cocoro</li>
                     <li onClick={()=>showProduct(4)}>Bebidas</li>
                     <li onClick={()=>showProduct(5)}>Mostrar todo</li>

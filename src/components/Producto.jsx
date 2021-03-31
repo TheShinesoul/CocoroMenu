@@ -3,8 +3,11 @@ import '../styles/product.scss';
 
 const Producto = ({producto}) => {
     return(
-        <div className="card_product">            
-            <h1 className="card_title"> { producto.nombre }</h1>
+        <div className="card_product"> 
+            { ( producto.nombre !== '' && producto.hasOwnProperty("nombre") )&& 
+                <h1 className="card_title"> { producto.nombre }</h1> 
+            }                       
+            
             { ( producto.descripcion !== '' && producto.hasOwnProperty("descripcion") )&& <p className="card_description"> { producto.descripcion }</p> }            
             { ( producto.precio !== '' && producto.hasOwnProperty("precio") )&& 
                 <p className="card_price"> ${ producto.precio }.- {( producto.pieza !== false && producto.hasOwnProperty("pieza") )&& 'c/u'}</p>
