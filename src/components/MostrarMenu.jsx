@@ -139,7 +139,7 @@ const MostrarMenu = () => {
         {
             id: 8,
             nombre : 'KIMCHI',
-            descripcion: 'Fideos de camote con verduras salteadas dulces.',
+            descripcion: 'Porción de acompañamiento (60 gramos)',
             precio:20,
             image:kimchi,
             tipo: 1,
