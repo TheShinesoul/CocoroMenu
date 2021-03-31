@@ -1,0 +1,26 @@
+.lista_bebidas{
+    width: 100%;
+    table{
+        width: 95%;
+        font-family: "Advent Pro", sans-serif;
+        font-size: 25px;
+        margin: 10px 20px;
+        
+        th{
+            font-weight: 500;
+            text-align: left;
+        }
+        .title-table{
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .shot_extra{
+            text-align: center!important;
+            font-weight: 800;
+        }
+    }
+    hr{
+        margin: 0px 35px;
+        border-bottom: 3px solid #8A3343;
+    }
+}

@@ -1,0 +1,29 @@
+.menu-container{
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    top: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    animation: 1s fadeIn ease-in;
+    .menu-lista{
+        animation: 1.5s bounceInLeft ease;
+        width: 50%;
+        height: 100%;
+        background: #8A3343;
+        ul{
+            margin: 0px;
+            padding: 0px;
+            li{
+                list-style: none;
+                margin: 0px;
+                padding-top: 10px;
+                padding-left: 10px;
+                color: #ffffff;
+                font-family: 'Advent Pro', sans-serif;
+                // border-bottom: 1px solid #ffffff;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
