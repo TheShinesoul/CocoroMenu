@@ -17,6 +17,8 @@ import polloteriyaki from '../assets/img/Comidas/POLLOTERIYAKI.webp';
 import sopaMiso from '../assets/img/Comidas/SOPA_MISO.webp';
 import sottoek from '../assets/img/Comidas/SOTTOEK-SOTTOEK.webp';
 import tofu from '../assets/img/Comidas/TOFU_GANGJEONG.webp';
+import tacos from '../assets/img/Comidas/tacos.webp'
+import fideosBuld from '../assets/img/Comidas/fideosBukld.webp'
 // desayunos
 import toast from '../assets/img/desayunos/TOAST.webp';
 import croissant from '../assets/img/desayunos/CROISSANT.webp';
@@ -27,6 +29,8 @@ import sandwich from '../assets/img/desayunos/sandwich.webp';
 import gelatina from '../assets/img/Postres/GELATINA.webp';
 import brownie from '../assets/img/Postres/BROWNIE.webp';
 import tiramisu from '../assets/img/Postres/TIRAMISU.webp';
+import payLimon from '../assets/img/Postres/PAYLIMON.webp';
+import chescake from '../assets/img/Postres/CHESVAKE.webp';
 import crepaHelado from '../assets/img/crepas/crepaHelado.webp';
 import crepamatcha from '../assets/img/crepas/crepamatcha.webp';
 // bebidas
@@ -41,6 +45,7 @@ import limonadaCocoro from '../assets/img/Bebidas/LimonadaCoco.webp';
 import coreaSur from '../assets/img/logosPaises/logocorea.webp';
 import japon from '../assets/img/logosPaises/logojapon.webp';
 import tailandia from '../assets/img/logosPaises/logotailandia.webp';
+import vietnam from '../assets/img/logosPaises/logoTaiwan.webp'
 // estilo
 import '../styles/mostrarMenu.scss';
 // logos
@@ -74,141 +79,171 @@ const MostrarMenu = () => {
             id: 1,
             nombre : 'BIBIMBAP',
             descripcion: 'Arroz con verduras salteadas, carne y salsa especial.',
-            extra:'Con huevo $55',
-            precio:50,
+            extra:'Con huevo $60',
+            precio:55,
             image:bibimap,
             tipo: 1,
             pais:coreaSur
         },
+
         {
             id: 2,
             nombre : 'SOTTOEK-SOTTOEK',
             descripcion: 'Brocheta de pastel de arroz con salchicha.',
-            precio:30,
+            precio:35,
             image:sottoek,
             tipo: 1,
             pieza: true,
             pais:coreaSur
         },
+
         {
             id: 3,
             nombre : 'JAPCHE',
             descripcion: 'Fideos de camote con verduras salteadas dulces.',
-            precio:50,
+            precio:60,
             image:japche,
             tipo: 1,
             pais:coreaSur
-        }
-        ,
-        {
-            id: 4,
-            nombre : 'BUDEJIGE',
-            descripcion: 'Fideos con sopa de kimchi y salchichas',
-            precio:50,
-            image:budejige,
-            tipo: 1,
-            pais:coreaSur
-        }
-        ,
-        {
-            id: 5,
-            nombre : 'CHIJIMI',
-            descripcion: 'Pancake de verduras más ensalada coreana y salsa.',
-            precio:50,
-            image:chijimi,
-            tipo: 1,
-            pais:coreaSur
-        }
-        ,
-        {
-            id: 6,
-            nombre : 'TOFU GANGJEONG',
-            descripcion: 'Tofu capeado con salsa picante, acompañado de huevo marinado en salsa soya y sake más arroz.',
-            precio:55,
-            image:tofu,
-            tipo: 1,
-            pais:coreaSur
-        }
-        ,
-        {
-            id: 7,
-            nombre : 'BULDAK',
-            descripcion: 'Pollo picante marinado con ajo y jengibre más queso manchego y arroz.',
-            precio:55,
-            image:buldak,
-            tipo: 1,
-            pais:coreaSur
-        }
-        ,
-        {
-            id: 8,
-            nombre : 'KIMCHI',
-            descripcion: 'Porción de acompañamiento (60 gramos)',
-            precio:20,
-            image:kimchi,
-            tipo: 1,
-            pais:coreaSur
         },
-        {
-            id: 9,
-            nombre : 'ENSALADA COREANA',
-            descripcion: 'Ensalada de lechuga roma, pepino y cebolla con vinagreta picante coreana y ajonjolí.',
-            precio:30,
-            image:ensaladaCoreana,
-            tipo: 1,
-            pais:coreaSur
-        },
-        {
-            id: 10,
-            nombre : 'GAPAO RICE',
-            descripcion: 'Pollo condimentado con chile, ajo y albahaca, con salsa de almeja y soya más arroz.',
-            precio:50,
-            image:gapao,
-            tipo: 1,
-            pais:tailandia
-        },
+
         {
             id: 11,
             nombre : 'POLLO TERIYAKI',
             descripcion: 'Arroz con pollo y espinacas, bañado en salsa teriyaki.',
-            precio:50,
+            precio:55,
             image:polloteriyaki,
             tipo: 1,
             pais:japon
         },
+
         {
             id: 12,
             nombre : 'CURRY',
             descripcion: 'Curry con trozos de pollo y zanahoria, acompañados de arroz al vapor.',
-            precio:50,
+            precio:60,
             image:curry,
             tipo: 1,
             pais:japon
         },
+
         {
             id: 13,
             nombre : 'KATSUDON',
             descripcion: 'Chuleta de cerdo capeada, huevo revuelto con salsa tradicional sobre arroz.',
-            precio:75,
+            precio:80,
             image:katsudon,
             tipo: 1,
             pais:japon
         },
+
+        {
+            id: 45,
+            nombre : 'TACOS VIETNAMITAS',
+            descripcion: 'Rollitos de verdura con fideos de arroz y proteína a elegir.(6 porciones)',
+            extra:'+$10 cambia tu proteína por atún ahumado.',
+            precio:65,
+            image:tacos,
+            tipo: 1,
+            pais:vietnam
+        },
+
+        {
+            id: 10,
+            nombre : 'GAPAO',
+            descripcion: 'Pollo condimentado con chile, ajo y albahaca, con salsa de almeja y soya más arroz.',
+            precio:65,
+            image:gapao,
+            tipo: 1,
+            pais:tailandia
+        },
+
+        {
+            id: 4,
+            nombre : 'BUDEJIGE',
+            descripcion: 'Fideos con sopa de kimchi y salchichas',
+            precio:60,
+            image:budejige,
+            tipo: 1,
+            pais:coreaSur
+        },
+
+        {
+            id: 5,
+            nombre : 'CHIJIMI',
+            descripcion: 'Pancake de verduras más ensalada coreana y salsa.',
+            precio:60,
+            image:chijimi,
+            tipo: 1,
+            pais:coreaSur
+        },
+
+        {
+            id: 6,
+            nombre : 'TOFU GANGJEONG',
+            descripcion: 'Tofu capeado con salsa picante, acompañado de huevo marinado en salsa soya y sake más arroz.',
+            precio:60,
+            image:tofu,
+            tipo: 1,
+            pais:coreaSur
+        },
+
+        {
+            id: 7,
+            nombre : 'BULDAK',
+            descripcion: 'Pollo picante marinado con ajo y jengibre más queso manchego y arroz.',
+            precio:60,
+            image:buldak,
+            tipo: 1,
+            pais:coreaSur
+        },
+
+        {
+            id: 46,
+            nombre : 'FIDEOS BULDAK',
+            descripcion: 'Pasta picante acompañada de salchicha, tteok, cebolla y queso manchego.',
+            precio:75,
+            image:fideosBuld,
+            tipo: 1,
+            pais: coreaSur
+        },
+
+        {
+            id: 9,
+            nombre : 'ENSALADA COREANA',
+            descripcion: 'Ensalada de lechuga roma, pepino y cebolla con vinagreta picante coreana y ajonjolí.',
+            precio:35,
+            image:ensaladaCoreana,
+            tipo: 1,
+            pais:coreaSur
+        },
+
+        {
+            id: 8,
+            nombre : 'KIMCHI',
+            descripcion: 'Porción de acompañamiento (60 gramos)',
+            precio:25,
+            image:kimchi,
+            tipo: 1,
+            pais:coreaSur
+        },    
+        
         {
             id: 14,
             nombre : 'ONIGIRI',
             descripcion: 'Bolita de arroz rellena (ingrediente a elegir) y queso crema.',
-            precio:30,
+            precio:35,
             image:onigiri,
             tipo: 1,
             pieza: true,
             pais:japon
         },
+
         {
             id: 15,
             nombre : 'SOPA MISO',
             descripcion: 'Sopa japonesa preparada con miso, queso panela y alga.',
-            precio:30,
+            precio:35,
             image:sopaMiso,
             tipo: 1,
             pais:japon
@@ -217,7 +252,7 @@ const MostrarMenu = () => {
             id: 16,
             nombre : 'ARROZ AL VAPOR',
             descripcion: 'Porción extra de arroz al vapor 200 gramos',
-            precio:30,
+            precio:35,
             image:arroz_al_vapor,
             tipo: 1,
             pais:japon
@@ -229,7 +264,7 @@ const MostrarMenu = () => {
             id: 17,
             nombre : 'TOAST CON AGUACATE Y HUEVO',
             descripcion: 'Incluye ensalada con queso panela y café americano',
-            precio:60,
+            precio:65,
             image:toast,
             tipo: 2,
         },
@@ -237,7 +272,7 @@ const MostrarMenu = () => {
             id: 18,
             nombre : 'CROISSANT CON HUEVO O CON JAMÓN Y QUESO',
             descripcion: 'Incluye ensalada con queso panela y café americano',
-            precio:60,
+            precio:65,
             image:croissant,
             tipo: 2,
         },
@@ -247,19 +282,19 @@ const MostrarMenu = () => {
         {
             id: 29,
             nombre : 'Atún',
-            precio:50,
+            precio:55,
             tipo: 5,
         },
         {
             id: 30,
             nombre : 'Jamón de pavo',
-            precio:50,
+            precio:55,
             tipo: 5,
         },
         {
             id: 31,
             nombre : 'Jamón serrano',
-            precio:70,
+            precio:75,
             tipo: 5,
         },
         {
@@ -280,16 +315,32 @@ const MostrarMenu = () => {
             id: 19,
             nombre : 'GELATINA USAGI',
             descripcion: 'Gelatina de té negro con leche más gelatina de corazones sabor coco, un poco de tapicoa y crema batida.',
-            precio:45,
-            extra: '+ CAFÉ AMERICANO $60.-',
+            precio:50,
+            extra: '+ CAFÉ AMERICANO $65.-',
             image:gelatina,
+            tipo: 3,
+        },
+        {
+            id: 49,
+            nombre : 'PAY DE LIMÓN',
+            precio:50,
+            extra: '+ CAFÉ AMERICANO $65.-',
+            image:payLimon,
+            tipo: 3,
+        },
+        {
+            id: 50,
+            nombre : 'CHEESCAKE',
+            precio:50,
+            extra: '+ CAFÉ AMERICANO $65.-',
+            image:chescake,
             tipo: 3,
         },
         {
             id: 20,
             nombre : 'BROWNIE CON NUEZ',
-            precio:45,
-            extra: '+ CAFÉ AMERICANO $60.-',
+            precio:50,
+            extra: '+ CAFÉ AMERICANO $65.-',
             image:brownie,
             tipo: 3,
         },
@@ -297,7 +348,7 @@ const MostrarMenu = () => {
             id: 21,
             nombre : 'TIRAMISÚ',
             precio:45,
-            extra: '+ CAFÉ AMERICANO $60.-',
+            extra: '+ CAFÉ AMERICANO $65.-',
             image:tiramisu,
             tipo: 3,
         },
@@ -310,19 +361,19 @@ const MostrarMenu = () => {
         },
         {
             id: 23,
-            nombre : 'CREPAS ESPECIALES',
-            descripcion: 'Helado con tapioca',
+            nombre : 'CREPA MATCHA CON TAPIOCA',
+            descripcion: 'Crepa rellena con fruta en almíbar, cubierta con crema de matcha, tapioca y caramelo.',
             precio:65,
-            image:crepaHelado,
+            image:crepamatcha,
             tipo: 3,
         },
         {
             id: 24,
-            nombre : 'CREPAS ESPECIALES',
-            descripcion: 'Matcha con tapioca',
-            precio:65,
-            image:crepamatcha,
-            tipo: 3,
+            nombre : 'CREPA HELADO CON TAPIOCA',
+            descripcion: 'Crepa rellena con fruta en almíbar, cubierta con una bola de helado de vainilla, tapioca y caramelo.',
+            precio:60,
+            image:crepaHelado,
+            tipo: 3, 
         },
     ]
 
@@ -330,14 +381,14 @@ const MostrarMenu = () => {
         {
             id: 25,
             nombre : 'LIMONADA COCORO',
-            precio:45,
+            precio:50,
             image:limonadaCocoro,
             tipo: 4,
         },
         {
             id: 26,
             nombre : 'DALGONA COFFEE',
-            precio:45,
+            precio:50,
             image:dalgona,
             tipo: 4,
         },
@@ -351,7 +402,7 @@ const MostrarMenu = () => {
         {
             id: 28,
             nombre : 'BUBBLE TEA',   
-            precio: 58, 
+            precio: 63, 
             image:bubbleTea,
             tipo: 4,
         },

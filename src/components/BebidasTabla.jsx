@@ -20,41 +20,42 @@ const BebidasTabla = () => {
                     <tr>
                         <th>Espresso</th>
                         <th></th>
-                        <th>$22</th>
-                        <th>$26</th>
+                        <th>$27</th>
+                        <th>$31</th>
                     </tr>
                     <tr>
                         <th>Cortado</th>
                         <th></th>
-                        <th>$24</th>
-                        <th>$28</th>
+                        <th>$29</th>
+                        <th>$33</th>
                     </tr>
                     <tr>
                         <th>Americano</th>
                         <th></th>
-                        <th>$25</th>
                         <th>$30</th>
+                        <th>$35</th>
                     </tr>
                     <tr>
                         <th>Latte</th>
-                        <th></th>
-                        <th>$30</th>
-                        <th>$35</th>
-                    </tr>
-                    <tr>
-                        <th>Capuchino</th>
-                        <th></th>
-                        <th>$30</th>
-                        <th>$35</th>
-                    </tr>
-                    <tr>
-                        <th>Moka</th>
                         <th></th>
                         <th>$35</th>
                         <th>$40</th>
                     </tr>
                     <tr>
+                        <th>Capuchino</th>
+                        <th></th>
+                        <th>$35</th>
+                        <th>$40</th>
+                    </tr>
+                    <tr>
+                        <th>Moka</th>
+                        <th></th>
+                        <th>$40</th>
+                        <th>$45</th>
+                    </tr>
+                    <tr>
                         <th colSpan="4" className="shot_extra">SHOT EXTRA $5</th>
+                        <th colSpan="4" className="shot_extra">TAPIOCA EXTRA $10</th>
                     </tr>
                 </tbody>
             </table>
@@ -75,39 +76,59 @@ const BebidasTabla = () => {
                     <tr>
                         <th>Chai</th>
                         <th></th>
-                        <th>$30</th>
-                        <th>40</th>
+                        <th>$35</th>
+                        <th>$45</th>
                     </tr>
                     <tr>
                         <th>Matcha</th>
                         <th></th>
-                        <th>$35</th>
                         <th>$45</th>
+                        <th>$55</th>
                     </tr>
                     <tr>
                         <th>Taro</th>
                         <th></th>
-                        <th>$35</th>
                         <th>$45</th>
+                        <th>$55</th>
                     </tr>
                     <tr>
                         <th>Horchata</th>
                         <th></th>
-                        <th>$30</th>
-                        <th>$40</th>
+                        <th>$35</th>
+                        <th>$45</th>
                     </tr>
                     <tr>
                         <th>+ Sabor melón</th>
                         <th></th>
-                        <th>$40</th>
                         <th>$45</th>
+                        <th>$50</th>
                     </tr>
                     <tr>
                         <th colSpan="4" className="shot_extra">SHOT EXTRA $5</th>
+                        <th colSpan="4" className="shot_extra">TAPIOCA EXTRA $10</th>
                     </tr>
                 </tbody>
             </table>
             <hr/>
+
+            <table>
+                <thead>
+                <tr>
+                    <th colSpan="2" rowSpan="2" className="title-table">CAFÉ</th>
+                    <th>Chico</th>
+                    <th>Grande</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colSpan="3" className="title-table">TISANAS</th>
+                        <th>$29</th>
+                        <th>$39</th>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
             <table>
                 <thead>
                 <tr>
@@ -121,7 +142,7 @@ const BebidasTabla = () => {
                 <tbody>
                     <tr>
                         <th colSpan="3" className="title-table">SODA ITALIANA</th>
-                        <th>$40</th>
+                        <th>$45</th>
                     </tr>
                     <tr>
                         <th>Cereza</th>
@@ -136,6 +157,7 @@ const BebidasTabla = () => {
                 </tbody>
             </table>
             <hr/>
+
             <table>
                 <thead>
                 <tr>
@@ -154,7 +176,9 @@ const BebidasTabla = () => {
                     
                 </tbody>
             </table>
+
             <hr/>
+
             <table>
                 <thead>
                 <tr>
@@ -168,34 +192,36 @@ const BebidasTabla = () => {
                 <tbody>
                     <tr>
                         <th colSpan="2">Shakerato</th>
-                        <th>$28</th>
+                        <th>$33</th>
                     </tr>
                     <tr>
                         <th colSpan="2">Americano</th>
-                        <th>$30</th>
+                        <th>$35</th>
                     </tr>
                     <tr>
                         <th colSpan="2">Latte</th>
-                        <th>$35</th>
-                    </tr>
-                    <tr>
-                        <th colSpan="2">Capuchino</th>
-                        <th>$35</th>
-                    </tr>
-                    <tr>
-                        <th colSpan="2">Moka</th>
                         <th>$40</th>
                     </tr>
                     <tr>
+                        <th colSpan="2">Capuchino</th>
+                        <th>$40</th>
+                    </tr>
+                    <tr>
+                        <th colSpan="2">Moka</th>
+                        <th>$45</th>
+                    </tr>
+                    <tr>
                         <th colSpan="2">Cold Brew</th>
-                        <th>$32</th>
+                        <th>$37</th>
                     </tr>
                     <tr>
                         <th colSpan="4" className="shot_extra">SHOT EXTRA $5</th>
                     </tr>
                 </tbody>
             </table>
+
             <hr/>
+
             <table>
                 <thead>
                 <tr>
@@ -209,43 +235,45 @@ const BebidasTabla = () => {
                 <tbody>
                     <tr>
                         <th colSpan="2">Frapuchino</th>
-                        <th>$38</th>
-                    </tr>
-                    <tr>
-                        <th colSpan="2">Cookies and cream</th>
                         <th>$43</th>
                     </tr>
                     <tr>
+                        <th colSpan="2">Cookies and cream</th>
+                        <th>$48</th>
+                    </tr>
+                    <tr>
                         <th colSpan="2">Chai</th>
-                        <th>$50</th>
-                    </tr>
-                    <tr>
-                        <th colSpan="2">Matcha</th>
-                        <th>$60</th>
-                    </tr>
-                    <tr>
-                        <th colSpan="2">Taro</th>
                         <th>$55</th>
                     </tr>
                     <tr>
+                        <th colSpan="2">Matcha</th>
+                        <th>$65</th>
+                    </tr>
+                    <tr>
+                        <th colSpan="2">Taro</th>
+                        <th>$60</th>
+                    </tr>
+                    <tr>
                         <th colSpan="2">Horchata</th>
-                        <th>$50</th>
+                        <th>$55</th>
                     </tr>
                     <tr>
                         <th colSpan="2">Mazapán</th>
-                        <th>$40</th>
+                        <th>$45</th>
                     </tr>
                     <tr>
                         <th colSpan="2">Galleta María</th>
-                        <th>$40</th>
+                        <th>$45</th>
                     </tr>
                     <tr>
                         <th colSpan="2">Cheesecake</th>
-                        <th>$50</th>
+                        <th>$55</th>
                     </tr>
                 </tbody>
             </table>
+
             <hr/>
+
             <table>
                 <thead>
                 <tr>
@@ -254,13 +282,13 @@ const BebidasTabla = () => {
                 </thead>
                 <tbody>
                     <tr>
-                        <th colSpan="4">Fresa, mango, moras</th>
+                        <th colSpan="4">Lichi, mango, moras.</th>
                     </tr>
                     <tr>
                         <th>De leche</th>
-                        <th>$45</th>
+                        <th>$50</th>
                         <th>De agua</th>
-                        <th>$40</th>
+                        <th>$45</th>
                     </tr>
                 </tbody>
             </table>
@@ -274,9 +302,9 @@ const BebidasTabla = () => {
                 <tbody>
                     <tr>
                         <th>Natural</th>
-                        <th>$35</th>
-                        <th>Matcha</th>
                         <th>$40</th>
+                        <th>Matcha</th>
+                        <th>$45</th>
                     </tr>
                 </tbody>
             </table>
