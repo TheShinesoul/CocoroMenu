@@ -66,8 +66,12 @@ const MostrarMenu = () => {
     const [bebidas, setBebidas] = React.useState(true)
     const hideMenu = () => {
         setMenu(!menu)
-        menu ? body.style.overflowY = "auto" : body.style.overflowY = "hidden"
-        
+        menu ? body.style.overflowY = "auto" : body.style.overflowY = "hidden";
+        if(menu === true){
+            window.scroll({
+                top: 0,
+            });
+        }
     }      
 
     /**
