@@ -255,7 +255,7 @@ const MostrarMenu = () => {
         {
             id: 16,
             nombre : 'ARROZ AL VAPOR',
-            descripcion: 'Porción extra de arroz al vapor 200 gramos',
+            descripcion: 'Porción extra de arroz al vapor 180 gramos',
             precio:35,
             image:arroz_al_vapor,
             tipo: 1,
@@ -344,7 +344,7 @@ const MostrarMenu = () => {
             id: 20,
             nombre : 'BROWNIE CON NUEZ',
             precio:50,
-            extra: '+ CAFÉ AMERICANO $65.-',
+            extra: '+ $5 agrega una bola de helado de vainilla',
             image:brownie,
             tipo: 3,
         },

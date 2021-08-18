@@ -64,7 +64,7 @@ const BebidasTabla = () => {
                 <thead>
                 <tr>
                     <th colSpan="2" rowSpan="2" className="title-table">LATTES</th>
-                    <th>Chico</th>
+                    <th >Chico</th>
                     <th>Grande</th>
                 </tr>
                 <tr>
@@ -114,20 +114,22 @@ const BebidasTabla = () => {
             <table>
                 <thead>
                 <tr>
-                    <th colSpan="2" rowSpan="2" className="title-table">CAFÉ</th>
+                    <th colSpan="2" rowSpan="2" className="title-table">TISANAS</th>
                     <th>Chico</th>
                     <th>Grande</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th colSpan="3" className="title-table">TISANAS</th>
+                        <th colSpan="2" className="title-table"></th>
                         <th>$29</th>
                         <th>$39</th>
                     </tr>
                     
                 </tbody>
             </table>
+
+            <hr/>
 
             <table>
                 <thead>
