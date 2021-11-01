@@ -236,7 +236,7 @@ const BebidasTabla = () => {
                 </thead>
                 <tbody>
                     <tr>
-                        <th colSpan="2">Frapuchino</th>
+                        <th colSpan="2">Capuchino frappé </th>
                         <th>$43</th>
                     </tr>
                     <tr>
